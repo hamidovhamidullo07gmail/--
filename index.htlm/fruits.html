@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фруктовый рай - Фрукты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Фруктовый рай</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="cart.html">Корзина (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Фрукты</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x150?text=Яблоки" alt="Яблоки">
+                <h3>Яблоки</h3>
+                <p>120 руб/кг</p>
+                <button onclick="addToCart('Яблоки', 120)">В корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x150?text=Бананы" alt="Бананы">
+                <h3>Бананы</h3>
+                <p>90 руб/кг</p>
+                <button onclick="addToCart('Бананы', 90)">В корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x150?text=Апельсины" alt="Апельсины">
+                <h3>Апельсины</h3>
+                <p>110 руб/кг</p>
+                <button onclick="addToCart('Апельсины', 110)">В корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x150?text=Груши" alt="Груши">
+                <h3>Груши</h3>
+                <p>130 руб/кг</p>
+                <button onclick="addToCart('Груши', 130)">В корзину</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 Фруктовый рай. Все права защищены.</p>
+        <p>Телефон: +7 (123) 456-78-90</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

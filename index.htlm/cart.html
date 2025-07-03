@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фруктовый рай - Корзина</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Фруктовый рай</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="cart.html">Корзина (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Ваша корзина</h2>
+        <div id="cart-items">
+            <!-- Товары будут добавляться сюда через JavaScript -->
+            <p id="empty-cart-message">Ваша корзина пуста</p>
+        </div>
+        <div id="cart-total">
+            <h3>Итого: <span id="total-price">0</span> руб</h3>
+        </div>
+
+        <form id="order-form">
+            <h3>Оформление заказа</h3>
+            <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Адрес доставки:</label>
+                <textarea id="address" required></textarea>
+            </div>
+            <button type="submit">Оформить заказ</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2023 Фруктовый рай. Все права защищены.</p>
+        <p>Телефон: +7 (123) 456-78-90</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
