@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фруктовый рай - Сухофрукты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Фруктовый рай</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="cart.html">Корзина (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Сухофрукты</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x150?text=Курага" alt="Курага">
+                <h3>Курага</h3>
+                <p>300 руб/кг</p>
+                <button onclick="addToCart('Курага', 300)">В корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x150?text=Изюм" alt="Изюм">
+                <h3>Изюм</h3>
+                <p>250 руб/кг</p>
+                <button onclick="addToCart('Изюм', 250)">В корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x150?text=Чернослив" alt="Чернослив">
+                <h3>Чернослив</h3>
+                <p>280 руб/кг</p>
+                <button onclick="addToCart('Чернослив', 280)">В корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/200x150?text=Финики" alt="Финики">
+                <h3>Финики</h3>
+                <p>320 руб/кг</p>
+                <button onclick="addToCart('Финики', 320)">В корзину</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 Фруктовый рай. Все права защищены.</p>
+        <p>Телефон: +7 (123) 456-78-90</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
